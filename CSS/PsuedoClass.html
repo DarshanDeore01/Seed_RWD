@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PsuedoClass</title>
+
+    <style type="text/css">
+      a:link {
+        color: red;
+      }
+
+      a:active {
+        color: green;
+      }
+
+      a:visited {
+        color: orange;
+      }
+
+      a:hover {
+        color: cyan;
+      }
+
+      h3:hover {
+        font-style: italic;
+        color: orange;
+        transition: 0.3s ease-out;
+      }
+      #p1:hover:first-letter,
+      #p2:hover:first-letter,
+      #p3:hover:first-letter {
+        font-style: italic;
+        font-size: 1.5em;
+        color: rgb(36, 14, 118);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>PsuedoClasses on Anchor Tag</h3>
+
+    <hr />
+
+    <a href="https://learn.seedinfotech.com" target="_blank">moodle</a>
+
+    <hr />
+
+    <p id="p1">First paragraph</p>
+    <p id="p2">Second paragraph</p>
+    <p id="p3">Third paragraph</p>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="basic_info" action="thankYou.html" method="get">
+        <input type="image" name="submit_img" src="C:\Users\DARSHAN\Desktop\Darshan.jpge.jpg" width="100px" height="70px">
+        <fieldset>
+            <legend align="center"><h4>Personal Information</h4>
+            </legend>
+            <p>
+                <label for="Fname"> first Name : </label>
+                <input type="text" name="Fname" placeholder="first_Name" required pattern="['A-Za-Z']{1,25}">
+            </p>
+            <p>
+                <label for="DOB"> Date of Birth: </label>
+                <input type="date" name="DOB" required>
+            </p>
+            <p>
+                <label for="Gender"> Gender : </label> <br>
+                <input type="radio" name="Gender" value="male" checked>male<br>
+                <input type="radio" name="Gender" value="female">female<br>
+                <input type="radio" name="Gender" value="Others"> Others
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend align="center">
+                <h4>Contact Information</h4>
+            </legend>
+            <p>
+                <label for="Mobile"> Mobile Number: </label>
+                <input type="text" name="Mobile" placeholder="e.g. +91- no follows" required
+                    pattern="['+91-']+[6-9]{1}[0-9]{9}">
+            </p>
+            <p>
+                <label for="Email"> Email Id : </label>
+                <input type="email" name="email" placeholder="e.g. darshan.deore21@vit.edu"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+            </p>
+            <p>
+                <label for="Adress"> Adress Information :</label>
+                <textarea name="Adress" rows="5" cols="25"></textarea>
+            </p>
+            <p>
+                <label for="City"> City Name :</label>
+                <select name="City">
+                    <option value="" selected>Select City</option>
+                    <option value="pune"> Pune</option>
+                    <option value="mumbai"> Mumbai</option>
+                    <option value="Thane"> Thane</option>
+                    <option value="Satara"> Satara</option>
+                    <option value="Sangli"> Sangli</option>
+                    <option value="Nashik"> Nashik</option>
+                    <option value="AhamadNagar"> AhamadNagar</option>
+                    <option value="Kolhapur">Kolhapur</option>
+                    <option value="Jalgaon">Jalgaon</option>
+                    <option value="Nagpur"> Nagpur</option>
+                    <option value="Aurangabad"> Aurangabad</option>
+                    <option value="Solapur"> Solapur</option>
+                    <option value="Amravati"> Amravati</option>
+                    <option value="Navi Mumbai"> Navi Mumbai</option>
+                    <option value="Akola"> Akola</option>
+                    <option value="Chandrapur"> Chandrapur</option>
+                    <option value="Latur"> Latur</option>
+                    <option value="Dhule"> Dhule</option>
+                    <option value="Jalna"> Jalna</option>
+                </select>
+            </p>
+        </fieldset>
+        <p>
+            <label for="Hobbies"> Hobbies</label><br>
+            <input type="checkbox" name="Hobbies" value="Trekking"> Trekking<br>
+            <input type="checkbox" name="Hobbies" value="Swimming"> Swimming<br>
+            <input type="checkbox" name="Hobbies" value="Running"> Running<br>
+            <input type="checkbox" name="Hobbies" value="Reading"> Reading<br>
+            <input type="checkbox" name="Hobbies" value="Cooking"> Cooking<br>
+            <!-- <input type="checkbox" name="Hobbies" value="Painting"> Painting<br>
+            <input type="checkbox" name="Hobbies" value="Photography"> Photography<br>
+            <input type="checkbox" name="Hobbies" value="Gardening"> Gardening<br>
+            <input type="checkbox" name="Hobbies" value="Playing Sports"> Playing Sports<br>
+            <input type="checkbox" name="Hobbies" value="Watching Movies"> Watching Movies<br>
+            <input type="checkbox" name="Hobbies" value="Traveling"> Traveling<br>
+            <input type="checkbox" name="Hobbies" value="Dancing"> Dancing<br>
+            <input type="checkbox" name="Hobbies" value="Writing"> Writing<br>
+            <input type="checkbox" name="Hobbies" value="Playing Musical Instruments"> Playing Musical Instruments<br>
+            <input type="checkbox" name="Hobbies" value="Sculpting"> Sculpting<br>
+            <input type="checkbox" name="Hobbies" value="Yoga"> Yoga<br>
+            <input type="checkbox" name="Hobbies" value="Singing"> Singing<br>
+            <input type="checkbox" name="Hobbies" value="Fishing"> Fishing<br>
+            <input type="checkbox" name="Hobbies" value="Volunteering"> Volunteering<br>
+            <input type="checkbox" name="Hobbies" value="Crafting"> Crafting<br>
+            <input type="checkbox" name="Hobbies" value="Bird Watching"> Bird Watching<br>
+            <input type="checkbox" name="Hobbies" value="Cycling"> Cycling<br>
+            <input type="checkbox" name="Hobbies" value="Pottery"> Pottery  for commenting select text press control and / -->
+        </p>
+        <p>
+            <input type="reset" name="reset" value="clear" />
+        </p>
+        <p>
+            <input type="submit" name="submit" valuue="register">
+        </p>
+    </form>
+</body>
+
+</html>
+
