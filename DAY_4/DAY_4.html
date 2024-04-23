@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 4</title>
+  </head>
+  <body>
+    <form
+      name="Basic Info"
+      action="https://apps.tataaia.com/OPS/Thankyou.html"
+      method="get"
+    >
+      <input
+        type="image"
+        name="Submit_Img"
+        height="80  "
+        width="80"
+        src="https://t3.ftcdn.net/jpg/00/87/08/52/360_F_87085243_gGRu9g4JGcTwmLIJpSi6XZu4yf5WdyqA.jpg"
+      />
+      <fieldset>
+        <legend>Personal Information &#128512;</legend>
+        <label>First Name :</label>
+        <input
+          type="text"
+          placeholder="First Name"
+          required
+          pattern="['A-Za-z']{1,25}"
+        /><br /><br />
+        <label>Last Name :</label>
+        <input type="text" placeholder="Last Name" required /><br /><br />
+        <label>Mobile :</label>
+        <input type="text" placeholder="+91-0000000000" required /><br /><br />
+        <label>Address :</label>
+        <textarea name="address" rows="5" cols="5"></textarea><br /><br />
+        <label>Birth Date :</label>
+        <input type="date" required /><br /><br />
+        <label>E mail id :</label>
+        <input
+          type="email"
+          required
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        /><br /><br />
+        <label>Gender :</label><br />
+        <input type="radio" id="Radio" name="Radio" value="Male" />
+        <label for="">Male</label><br />
+        <input type="radio" id="Radio" name="Radio" value="Female" />
+        <label for="">Female</label><br />
+        <input type="radio" id="Radio" name="Radio" value="other" />
+        <label for="">Other</label><br /><br />
+        <label for="">City</label>
+        <select name="City">
+          <option value="" selected>Select City</option>
+          <option value="pune">Pune</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Navi Mumbai">Navi Mumbai</option>
+          <option value="Nashik">Nashik</option></select
+        ><br /><br />
+        <label>Hobbies</label><br />
+        <input type="checkbox" name="Cricket" value="Cricket" />Cricket<br />
+        <input type="checkbox" name="Cricket" value="Football" />Football<br />
+        <input
+          type="checkbox"
+          name="Cricket"
+          value="Photography"
+        />Photography<br />
+
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Clear" />
+      </fieldset>
+    </form>
+  </body>
+</html>
