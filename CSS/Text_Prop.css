@@ -1,0 +1,41 @@
+Word-Spacing
+.t-word-spacing-5px:hover { word-spacing: 5px; }
+.t-word-spacing-7px:hover { word-spacing: 7px; }
+.t-word-spacing-9px:hover { word-spacing: 9px; }
+
+Letter-Spacing 
+.t-letter-spacing-2px:hover { letter-spacing: 2px; }
+.t-letter-spacing-5px:hover { letter-spacing: 5px; }
+.t-letter-spacing-7px:hover { letter-spacing: 7px; }
+
+Text-Decoration 
+.t-decoration-none:hover { text-decoration: none; }
+.t-decoration-underline:hover { text-decoration: underline; }
+.t-decoration-overline:hover { text-decoration: overline; }
+.t-decoration-line-through:hover { text-decoration: line-through; }
+.t-decoration-mixed:hover { text-decoration: underline overline line-through; }
+
+Vertical-Align 
+.t-vertical-align-baseline:hover { vertical-align: baseline; }
+.t-vertical-align-text-top:hover { vertical-align: text-top; }
+.t-vertical-align-text-bottom:hover { vertical-align: text-bottom; }
+.t-vertical-align-superscript:hover { vertical-align: super; }
+.t-vertical-align-subscript:hover { vertical-align: sub; }
+
+Text-Transform 
+.t-transform-none:hover { text-transform: none; }
+.t-transform-capitalize:hover { text-transform: capitalize; }
+.t-transform-uppercase:hover { text-transform: uppercase; }
+.t-transform-lowercase:hover { text-transform: lowercase; }
+
+Text-Align
+.t-align-left{ text-align: left; }
+.t-align-right{ text-align: right; }
+.t-align-center{ text-align: center; }
+.t-align-justify{ text-align: justify; }
+
+
+Text-Indent
+.t-indent-15px{ text-indent: 15px; text-align: justify; }
+.t-indent-25px{ text-indent: 25px; text-align: justify; }
+.t-indent-30px{ text-indent: 30px; text-align: justify; }

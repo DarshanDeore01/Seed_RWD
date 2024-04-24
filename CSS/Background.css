@@ -1,0 +1,12 @@
+.back {
+  background-image: url(lighthouse.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+hr {
+  background:gray;
+  height: 3px;
+}
+.text-white {
+  color: white;
+}

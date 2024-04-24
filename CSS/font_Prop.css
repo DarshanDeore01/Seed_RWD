@@ -1,0 +1,51 @@
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+  }
+  
+  span:hover{background-color: orange;}
+
+Font-Family
+
+  .f-arial:hover{font-family:Arial;}
+  .f-monospace:hover{font-family:monospace;}
+  .f-time:hover{font-family:Times;}
+  .f-serif:hover{font-family:sans-serif;}
+  .f-verdana:hover{font-family:verdana;}
+
+Font-Style 
+  
+  .f-normal:hover{font-style:normal;}
+  .f-italic:hover{font-style:italic;}
+  .f-oblique:hover{font-style:oblique;}
+
+Font-Variant
+
+  .f-normal:hover{font-variant: normal;}
+  .f-small-caps:hover{font-variant: small-caps;}
+  
+Font-Size
+
+  .f-x-Small:hover{font-size: x-small;}
+  .f-Small:hover{font-size: small;}
+  .f-medium:hover{font-size: medium;}
+  .f-large:hover{font-size: large;}
+
+Font-Weight
+
+  .f-normal:hover{font-weight:normal}
+  .f-bold:hover{font-weight:bold ;}
+  .f-bolder:hover{font-weight:bolder;}
+  .f-light:hover{font-weight:light;}
+  .f-100px:hover{font-weight: 100;}
+  .f-200px:hover{font-weight: 200;}
+  .f-300px:hover{font-weight: 300;}
+  .f-400px:hover{font-weight: 400;}
+  .f-500px:hover{font-weight: 500;}
+  .f-600px:hover{font-weight: 600;}
+  .f-700px:hover{font-weight: 700;}
+  .f-800px:hover{font-weight: 800;}
+  .f-900px:hover{font-weight: 900;}
+  
