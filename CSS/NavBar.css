@@ -1,0 +1,24 @@
+img {
+  width: 100px;
+  height: 66px;
+  float: left;
+  margin: 15px 15px 15px 15px;
+}
+.bar {
+  background-color: black;
+  font-size: 1.75em;
+  height: 100px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover{color: orange;}
+nav ul {
+  list-style: none;
+}
+ul li {
+  float: left;
+  width: 25%;
+  margin: 40px 20px 0px 20px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonocci_Series</title>
+</head>
+<body>
+    <script type="text/javascript">
+        const n = 10;
+        let series = new Array (n);
+        series.fill(0);
+        series[0]=0;
+        series[1]=1;
+
+function fibonacciSeries(n) 
+{
+  for (let i = 2; i < n; i=i+1) {
+series[i] = series[i - 1] + series[i - 2];
+  }
+}
+console.log(fibonacciSeries(n));
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.auto:hover {cursor: auto ;}
+.crosshair:hover {cursor: crosshair;}
+.pointer:hover {cursor: pointer;}
+.grab:hover {cursor: grab;}
+.grabbing:hover {cursor: grabbing;}
+.progress:hover {cursor: progress;}
+.move:hover{cursor: move;}

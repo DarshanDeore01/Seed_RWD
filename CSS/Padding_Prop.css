@@ -1,0 +1,17 @@
+.br{border: 3px solid black;}
+
+.w-500{width: 500px;}
+.h-400{height: 400px;}
+.bg-blu{background-color: lightblue;}
+.sh:hover{box-shadow: 7px 7px 25px gray; transition:0.3s;}
+.f-italic{font-style: italic;}
+.text-blue{color: blue;}
+.text-center{text-align: center;}
+.text-sh:hover{text-shadow: 7px 7px 7px black; transition:0.3s;}
+
+.p-left{padding-left: 20px;}
+.p-right{padding-right: 20px;}
+.p-top{padding-top: 20px;}
+.p-bottom{padding-bottom: 20px;}
+
+.bg-color{background-color: white;}

@@ -1,0 +1,84 @@
+.body,
+html {
+  height: 100%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  width: 1000px;
+  height: 5000px;
+  border: 3px black;
+  margin: 0%;
+  background-color: rgb(249, 249, 249);
+  border-width: thin;
+}
+.header {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 36px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  }
+
+.date {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;}
+.margin { margin: 1px;}
+.subh {text-align: center;font-size: 40px;font-family: "Times New Roman", Times, serif;margin-top: 0px;font-style: italic;}
+.para{float: left; clear: right;margin: 0px;}
+.br{border: 3px black;}
+.w-400{width: 500px;}
+.h-500{height: 500px;}
+.w-100{width: 100px;}
+.h-100{height: 100px;}
+.float{float: left;}
+.floatr{float: right;}
+.clear{clear: both;}
+.marginb{margin: 55px;}
+.margint{margin: 5px;}
+.marginr{margin-right: 10px;}
+.marginl{margin-left: 5px;}
+.paddingr{padding: 15px;}
+.paddingl{padding: 15px;}
+.paddingb{padding: 15px;}
+.paddingt{padding: 15px;}
+
+.brd{border: 1px black;
+    margin: 0.1px;
+   
+    border-width: thin;
+    padding-top: 0.2px;}
+
+    .content {
+        text-align: center;
+    }
+    
+    .center-image {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .justified-paragraph {
+        text-align: justify;
+    }
+
+    .w-300{width: 300px;}
+    .h-800{width: 800px;}
