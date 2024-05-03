@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <style type="text/css">
+    div{
+        border: 3px solid orange;
+        padding: 20PX
+    }
+    input[type="text"]{
+        width: 300px;
+        height: 25px;
+    }
+</style>
+</head>
+<body>
+    <div>
+<input type="text" name="" value="mouseover, mouseout event !!" onmouseover="over(this)" onmouseout="out(this)">
+    </div>
+    <br>
+    <div>
+        <input type="text" name="" >
+        <input type="text" name="" placeholder="your name" onchange="change(this)" >
+    </div>
+    <br>
+    <div>
+        <input type="text" name="" >
+        <input type="text" name="" value="Darshan_Deore" onkeyup="upk(this)">
+    </div>
+    <br>
+    <div>
+        <input type="text" name="" >
+        <input type="text" name="" value="Darshan_Deore" onkeydown="downk(this)">
+    </div>
+    <br>
+<div>
+    <p onmousedown="downm(this)" onmouseup="upm(this)">
+        Mouse Down Mouse Up
+    </p>
+</div>
+<br>
+<div>
+    <input type="text" name="" >
+    <input type="text" name="" value="Darshan_Deore" onfocus="focus(this)">
+</div>
+<br>
+
+    <script type="text/javascript" src="events.js"></script>
+</body>
+</html>
