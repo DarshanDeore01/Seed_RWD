@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_MANIPU2</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <p id="p_remove">
+        Paragraph will be removed !!
+    </p>
+    <div id="div">
+        <p id="p_detach">
+            Paragraph will be detached but can be retrived !!
+        </p>
+    </div>
+    <p id="p_empty">
+        Third Paragraph !!
+    </p>
+    <button id="btn_r">Remove</button>
+    <button id="btn_d">detach</button>
+    <button id="btn_rt">Retriev</button>
+    <button id="btn_e">Empty</button>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var data
+            $("#btn_r").click(function(){ 
+            $('#p_remove').remove() 
+            })
+
+            $("#btn_d").click(function(){ 
+            data = $("#p_detach").detach() 
+            })
+
+            $("#btn_rt").click(function(){
+            $("#div").html(data) 
+            })
+
+            $("#btn_e").click(function(){ 
+            $("#p_empty").empty() 
+        })
+        })
+    </script>
+</body>
+</html>
+

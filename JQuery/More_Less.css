@@ -1,0 +1,9 @@
+
+#details{
+    display: none;
+}
+#M,#L{
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+}

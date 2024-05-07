@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <p id="exp"><strong>This is<mark>Darshan Deore</mark>.....!</strong></p>
+    <Button id="bt_html">HTML</Button>
+    <Button id="bt_text">TEXT</Button>
+    <p id="result"></p>
+
+    <p>
+        Name : <input type="text" id="user_name">
+        <input type="button" id="print_btn" value="greet">
+    </p>
+
+    <h3 id="display">Good Morning,</h3>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#bt_html").on("click", function () {
+                var str = $("#exp").html()
+                alert("html :" + str)
+                $("#result").html(str)
+            })
+
+            $("#bt_text").on("click", function () {
+                alert("text : " + $("#exp").text())
+                $("#result").text($("#exp").text())
+            })
+
+            $("input[type='button']").click(function () {
+                alert("Welcome, " + $("#user_name").val())
+                $("#display").append($("#user_name").val())
+            })
+        })
+    </script>
+</body>
+
+</html>

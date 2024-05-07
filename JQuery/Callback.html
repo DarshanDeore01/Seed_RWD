@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $("#bt_show").click(function () {
+                $("#paragraph").show(1000, function(){ alert("Paragraph is shown")})
+            })
+
+            $("#bt_hide").click(function () {
+                $("#paragraph").hide(1000, function(){alert("Paragraph is hidden")})
+                
+            })
+
+            $("#bt_toggle").click(function () {
+                // if( $("#paragraph").is(":visible"))// 
+                if($("#paragraph").css("display")!="none")
+                {
+                    $("#paragraph").hide(1000, function(){alert("Paragraph is now hidden")})
+                     
+                }
+                else if($("#paragraph").css("display")=="none") //is(:not(":visible"))
+                {
+                    $("#paragraph").show(1000, function(){ alert("Paragraph is now shown")})
+                }
+                // $("#paragraph").toggle(100, function(){alert("Paragraph is toggled")})//
+            })
+        })
+    </script>
+    <p id="paragraph" style="display: none;">
+        Adipisicing aliqua consequat laborum elit nostrud et aliqua. Do aliquip ea eiusmod nostrud dolore ipsum ut enim
+        nulla. Laborum laborum in non irure adipisicing dolore reprehenderit magna. Incididunt culpa ea culpa et in.
+        Culpa non voluptate culpa sunt ea. Quis commodo fugiat velit veniam non occaecat laboris enim aliquip. Amet id
+        voluptate dolor amet est enim veniam commodo magna cillum voluptate.Minim cupidatat aliqua cupidatat nulla Lorem
+        fugiat aute cillum consectetur tempor non consectetur labore. Duis
+        labore est voluptate dolore do et cillum incididunt ullamco. Sunt aliquip enim irure cillum culpa. Nostrud aute
+        aliquip adipisicing ullamco do consectetur nisi cillum. Quis aliqua nulla aliqua ad ea qui dolore elit amet id
+        culpa cillum. Sint ea in culpa tempor consectetur nisi et exercitation labore consectetur ipsum non
+        excepteur.Ipsum velit consequat laborum sint amet nisi dolore. Ipsum Lorem ut ipsum cupidatat incididunt elit
+        elit sint
+        enim qui. Anim est ipsum laborum aliqua nulla est laborum fugiat magna.Amet labore elit incididunt qui labore
+        culpa ullamco tempor tempor. Ad sint duis est duis Lorem exercitation
+        duis laboris excepteur eiusmod est aliqua eu exercitation. Non eiusmod occaecat exercitation ea mollit ut
+        pariatur excepteur enim. Id velit proident esse dolor deserunt sit exercitation ad. Culpa incididunt ea ea
+        laboris sint anim exercitation occaecat est enim. Officia dolore irure consectetur commodo mollit consectetur
+        amet esse exercitation mollit. Id minim nostrud dolor officia quis.Laborum consequat id exercitation excepteur
+        proident non nostrud minim veniam. Aute occaecat sunt exercitation
+        aliquip officia commodo culpa occaecat ullamco. Nostrud anim sint et cillum laboris ea commodo. Ut exercitation
+        quis elit minim ut. Aliquip consequat sunt incididunt ad. Consequat voluptate cupidatat ad ullamco veniam
+        cupidatat labore do. Ullamco magna veniam nostrud commodo est ad fugiat pariatur anim commodo.Lorem deserunt
+        labore id tempor. Officia ad cillum laboris velit culpa eu proident sit irure esse ea. Qui dolore
+        irure laborum nisi commodo voluptate. Elit consectetur esse occaecat tempor sint aute. Consectetur Lorem
+        pariatur incididunt esse nulla qui culpa labore excepteur dolore sunt fugiat. Officia enim aliqua in qui commodo
+        consectetur consectetur eu enim.Ex aliquip velit reprehenderit exercitation est sit sunt officia non sit ad
+        exercitation. Tempor consectetu sunt ex ad incididunt excepteur nulla commodo ad nostrud. Quis est do laborum
+        commodo
+        excepteur mollit voluptate dolore tempor aute et deserunt laboris labore.Id officia consequat ullamco veniam.
+        Dolor sit mollit ea enim duis
+        cillum. Fugiat magna veniam elit magna. Culpaanim sint in exercitation elit culpa veniam consectetur. Deserunt
+        magna
+        eiusmod reprehenderit est dolore qui
+        ullamco minim. Aute enim cupidatat mollit sint nostrud cupidatat deserunt aliquip ut. Magna quis excepteur ad
+        non amet occaecat nostrud officia anim cillum. Nostrud incididunt veniam quis et reprehenderit incididunt
+        occaecat labore cupidatat in exercitation sunt mollit
+        ut. Aliqua eu cillum ut laborum pariatur reprehenderit esse ipsum sit ea anim. Nostrud aute sint eu qui sint
+        minim exercitation commodo magna ut ea. Nisi labore ex ea esse. Fugiat dolor mollit irure fugiat voluptate
+        aliqua elit.Do Lorem dolor consectetur eiusmod culpa ea do excepteur culpa sunt ex cillum dolore adipisicing.
+        Minim laboris
+        est voluptate nisi non occaecat consequat laboris ex non. Dolore esse tempor veniam amet veniam officia eiusmod
+        in veniam.
+    </p>
+    <button id="bt_show">Show</button>
+    <button id="bt_hide">Hide</button>
+    <button id="bt_toggle">Toggle</button>
+</body>
+
+</html>

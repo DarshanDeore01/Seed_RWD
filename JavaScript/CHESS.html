@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Chess</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .square {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #333;
+        }
+
+        .white {
+            background-color: #ffffff;
+        }
+
+        .black {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="chessboard">
+                <!-- Chessboard squares will be dynamically generated here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Function to create the chessboard dynamically
+    function createChessboard() {
+        var chessboard = document.querySelector('.chessboard');
+        for (var i = 0; i < 8; i++) {
+            var row = document.createElement('div');
+            row.className = 'row';
+            for (var j = 0; j < 8; j++) {
+                var square = document.createElement('div');
+                square.className = 'col square';
+                if ((i + j) % 2 === 0) {
+                    square.classList.add('white');
+                } else {
+                    square.classList.add('black');
+                }
+                square.dataset.row = i;
+                square.dataset.col = j;
+                row.appendChild(square);
+            }
+            chessboard.appendChild(row);
+        }
+    }
+
+    // Event listener for clicking on chessboard squares
+    document.addEventListener('DOMContentLoaded', function() {
+        createChessboard();
+
+        var squares = document.querySelectorAll('.square');
+        squares.forEach(function(square) {
+            square.addEventListener('click', function() {
+                alert('Clicked on row ' + square.dataset.row + ', column ' + square.dataset.col);
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
